@@ -44,8 +44,7 @@ header{
 
 .homepage-main{
     padding: 40px 80px;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
+    background-image: url(../../public/img/main-background.jpg);
 
     h2{
         color: $text-color-2;
@@ -55,10 +54,14 @@ header{
         display: flex;
         flex-wrap: wrap;
 
-        .pasta-poster{
+        a{
             width: calc((100%/ 3) - 10px);
             margin-right: 10px;
             margin-bottom: 10px;
+
+            img{
+                width: 100%;
+            }
         }
     }
 }

@@ -154,9 +154,11 @@ $pastaArray = json_decode($data, true);
                 <section>
                     <h2>LE LUNGHE</h2>
                     <div class="pasta-container">
-                        @foreach ($pastaArray as $item)
-                            @if ($item['tipo'] === 'lunga')
-                                <img src='{{$item['src']}}'' alt="" class="pasta-poster">
+                        @foreach ($pastaArray as $item => $value)
+                            @if ($value['tipo'] === 'lunga')
+                                <a href="/product/{{$item}}">
+                                    <img src='{{$value['src']}}'' alt="" class="pasta-poster">
+                                </a>
                             @endif
                         @endforeach
                     </div>
@@ -167,9 +169,11 @@ $pastaArray = json_decode($data, true);
                 <section>
                     <h2>LE CORTE</h2>
                     <div class="pasta-container">
-                        @foreach ($pastaArray as $item)
-                            @if ($item['tipo'] === 'corta')
-                                <img src='{{$item['src']}}'' alt="" class="pasta-poster">
+                        @foreach ($pastaArray as $item => $value)
+                            @if ($value['tipo'] === 'corta')
+                                <a href="/product/{{$item}}">
+                                    <img src='{{$value['src']}}'' alt="" class="pasta-poster">
+                                </a>
                             @endif
                         @endforeach
                     </div>
@@ -180,9 +184,11 @@ $pastaArray = json_decode($data, true);
                 <section>
                     <h2>LE CORTISSIME</h2>
                     <div class="pasta-container">
-                        @foreach ($pastaArray as $item)
-                            @if ($item['tipo'] === 'cortissima')
-                                <img src='{{$item['src']}}'' alt="" class="pasta-poster">
+                        @foreach ($pastaArray as $item => $value)
+                            @if ($value['tipo'] === 'cortissima')
+                                <a href="/product/{{$item}}">
+                                    <img src='{{$value['src']}}'' alt="" class="pasta-poster">
+                                </a>
                             @endif
                         @endforeach
                     </div>

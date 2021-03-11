@@ -38,8 +38,7 @@ header .header-nav-item:hover {
 
 .homepage-main {
   padding: 40px 80px;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
+  background-image: url(/images/main-background.jpg?495cda396bfe9f137038166b61c40759);
 }
 .homepage-main h2 {
   color: #002d73;
@@ -48,10 +47,13 @@ header .header-nav-item:hover {
   display: flex;
   flex-wrap: wrap;
 }
-.homepage-main .pasta-container .pasta-poster {
+.homepage-main .pasta-container a {
   width: calc((100%/ 3) - 10px);
   margin-right: 10px;
   margin-bottom: 10px;
+}
+.homepage-main .pasta-container a img {
+  width: 100%;
 }
 
 .products-main {

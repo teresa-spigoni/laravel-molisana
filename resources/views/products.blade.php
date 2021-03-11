@@ -149,10 +149,10 @@ $pastaArray = json_decode($data, true);
 
             {{-- container --}}
             <div class="container">
-                <h2>{{$pastaArray[1]['titolo']}}</h2>
-                <img src="{{$pastaArray[1]['src-h']}}" alt="">
-                <img src="{{$pastaArray[1]['src-p']}}" alt="">
-                <p class="product-description">{{$pastaArray[1]['descrizione']}}</p> 
+                <h2>{{$pastaArray[$idProduct]['titolo']}}</h2>
+                <img src="{{$pastaArray[$idProduct]['src-h']}}" alt="">
+                <img src="{{$pastaArray[$idProduct]['src-p']}}" alt="">
+                <p class="product-description">{{$pastaArray[$idProduct]['descrizione']}}</p> 
             </div>
             {{-- container --}}
 
