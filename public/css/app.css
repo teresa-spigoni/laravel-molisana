@@ -69,9 +69,12 @@ header .header-nav-item:hover {
 .products-main img {
   width: calc(100% - 40px);
 }
-.products-main .product-description {
+.products-main .productDescription, .products-main ol li {
   text-align: left;
   color: #002d73;
+}
+.products-main ol li {
+  list-style-position: inside;
 }
 
 footer .footer-container {

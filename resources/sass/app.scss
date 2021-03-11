@@ -81,10 +81,15 @@ header{
         width: calc(100% - 40px);
     }
 
-    .product-description{
+    .productDescription, ol li{
         text-align: left;
         color: $text-color-2;
     }
+
+    ol li{
+        list-style-position: inside;
+    }
+
 }
 
 footer{
