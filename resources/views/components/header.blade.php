@@ -1,13 +1,25 @@
-<hearder>
+<header>
 
     @php
         $nav = ['Home', 'Prodotti', 'News'];
     @endphp
 
-    <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
-    <nav class="header-nav">
-        @foreach ($nav as $navItem)
-            <div class="header-nav-item">{{$navItem}}</div>
-        @endforeach
-    </nav>
+    {{-- container --}}
+    <div class="container">
+
+        {{-- logo --}}
+        <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
+        {{-- logo --}}
+
+        {{-- navbar --}}
+        <nav class="header-nav">
+            @foreach ($nav as $navItem)
+                <div class="header-nav-item"><a href="#">{{$navItem}}</a></div>
+            @endforeach
+        </nav>
+        {{-- navbar --}}
+
+    </div>
+    {{-- container --}}
+    
 </header>

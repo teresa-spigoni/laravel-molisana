@@ -145,50 +145,14 @@ $pastaArray = json_decode($data, true);
         {{-- header --}}
         
         {{-- main --}}
-        <main class="homepage-main">
+        <main class="products-main">
 
             {{-- container --}}
             <div class="container">
-
-                {{-- section pasta lunga --}}
-                <section>
-                    <h2>LE LUNGHE</h2>
-                    <div class="pasta-container">
-                        @foreach ($pastaArray as $item)
-                            @if ($item['tipo'] === 'lunga')
-                                <img src='{{$item['src']}}'' alt="" class="pasta-poster">
-                            @endif
-                        @endforeach
-                    </div>
-                </section>
-                {{-- section pasta lunga --}}
-                
-                {{-- section pasta corta --}}
-                <section>
-                    <h2>LE CORTE</h2>
-                    <div class="pasta-container">
-                        @foreach ($pastaArray as $item)
-                            @if ($item['tipo'] === 'corta')
-                                <img src='{{$item['src']}}'' alt="" class="pasta-poster">
-                            @endif
-                        @endforeach
-                    </div>
-                </section>
-                {{-- section pasta corta --}}
-                
-                {{-- section pasta cortissima --}}
-                <section>
-                    <h2>LE CORTISSIME</h2>
-                    <div class="pasta-container">
-                        @foreach ($pastaArray as $item)
-                            @if ($item['tipo'] === 'cortissima')
-                                <img src='{{$item['src']}}'' alt="" class="pasta-poster">
-                            @endif
-                        @endforeach
-                    </div>
-                </section>
-                {{-- section pasta cortissima --}}
-                
+                <h2>{{$pastaArray[1]['titolo']}}</h2>
+                <img src="{{$pastaArray[1]['src-h']}}" alt="">
+                <img src="{{$pastaArray[1]['src-p']}}" alt="">
+                <p class="product-description">{{$pastaArray[1]['descrizione']}}</p> 
             </div>
             {{-- container --}}
 
