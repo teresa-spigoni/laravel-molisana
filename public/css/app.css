@@ -42,6 +42,7 @@ header .header-nav-item:hover {
 }
 .homepage-main h2 {
   color: #002d73;
+  padding-bottom: 10px;
 }
 .homepage-main .pasta-container {
   display: flex;

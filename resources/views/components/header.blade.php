@@ -1,7 +1,23 @@
 <header>
 
     @php
-        $nav = ['Home', 'Prodotti', 'News'];
+        $nav = [
+            [
+                'titolo' => 'Home',
+                'src' => '/'
+            
+            ], 
+            [
+                'titolo' => 'Prodotti',
+                'src' => '/'
+
+            ], 
+            [
+                'titolo' => 'News',
+                'src' => '/'
+
+            ]
+        ];
     @endphp
 
     {{-- container --}}
@@ -13,8 +29,8 @@
 
         {{-- navbar --}}
         <nav class="header-nav">
-            @foreach ($nav as $navItem)
-                <div class="header-nav-item"><a href="#">{{$navItem}}</a></div>
+            @foreach ($nav as $navItem => $value)
+                <div class="header-nav-item"><a href='{{$value['src']}}'>{{$value['titolo']}}</a></div>
             @endforeach
         </nav>
         {{-- navbar --}}
