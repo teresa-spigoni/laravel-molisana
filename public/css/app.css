@@ -6,6 +6,7 @@
 
 .big-container {
   font-family: "Roboto", sans-serif;
+  overflow: auto;
 }
 
 .container {
@@ -34,6 +35,22 @@ header .header-nav-item a {
 }
 header .header-nav-item:hover {
   background: #b2e5fc;
+}
+@media screen and (max-width: 760px) {
+  header .header-nav {
+    display: none;
+  }
+}
+header .menu {
+  color: #002d73;
+  margin: 15px;
+  font-size: 30px;
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  header .menu {
+    display: block;
+  }
 }
 
 .homepage-main {
@@ -85,6 +102,12 @@ footer .footer-container-box {
   width: calc(100% / 3);
   color: #89929f;
 }
+@media screen and (max-width: 760px) {
+  footer .footer-container-box {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
 footer .footer-container-box h2 {
   margin-bottom: 20px;
 }
@@ -93,6 +116,17 @@ footer .footer-container-box .link {
 }
 footer .footer-container-box .link a {
   color: #89929f;
+}
+@media screen and (max-width: 760px) {
+  footer .footer-container .left img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 760px) {
+  footer .footer-container {
+    flex-wrap: wrap;
+    font-size: 10px;
+  }
 }
 footer .footer-img {
   width: 100%;

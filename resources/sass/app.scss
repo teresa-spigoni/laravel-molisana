@@ -1,5 +1,9 @@
 //
 @import 'color';
+
+$tablet: 760px;
+$smartphone: 350px;
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +12,7 @@
 
 .big-container{
     font-family: 'Roboto', sans-serif;
+    overflow: auto;
 }
 
 .container{
@@ -22,6 +27,7 @@ a{
 header{
     text-align: center;
     padding-top: 40px;
+
 
     .header-nav{
         margin-top: 30px;
@@ -38,6 +44,21 @@ header{
 
         &-item:hover{
             background: $hover-color-1;
+        }
+
+        @media screen and (max-width: $tablet) {
+           display: none;
+        }
+    }
+
+    .menu{
+        color: $text-color-2;
+        margin: 15px;
+        font-size: 30px;
+        display: none;
+
+        @media screen and (max-width: $tablet) {
+            display: block;
         }
     }
 }
@@ -93,6 +114,7 @@ header{
 }
 
 footer{
+
     .footer-container{
         padding-top: 60px;
         display: flex;
@@ -100,6 +122,11 @@ footer{
         &-box{
             width: calc(100% / 3);
             color: $text-color-3;
+
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+                margin-left: 20px;
+            }
 
             h2{
                 margin-bottom: 20px;
@@ -113,6 +140,17 @@ footer{
                 }  
             }
             
+        }
+
+        .left img {
+            @media screen and (max-width: $tablet) {
+                width: 200px;
+            }
+        }
+
+        @media screen and (max-width: $tablet) {
+            flex-wrap: wrap;
+            font-size: 10px;
         }
     }
 
