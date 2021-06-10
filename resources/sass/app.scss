@@ -93,6 +93,25 @@ header{
     background: $background-color-1;
     text-align: center;
     padding: 40px 0 30px 0;
+    position: relative;
+
+    #pre, #next{
+        color: $text-color-2;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #pre{
+        position: absolute;
+        left: 50px;
+        top: 50%;
+    }
+
+    #next{
+        position: absolute;
+        right: 50px;
+        top: 50%;
+    }
 
     h2{
         color: $text-color-2;
@@ -137,9 +156,9 @@ footer{
 
                 a{
                     color: $text-color-3;
-                }  
+                }
             }
-            
+
         }
 
         .left img {
@@ -156,7 +175,7 @@ footer{
 
     .footer-img{
         width: 100%;
-        
+
         img{
             width: 100%;
         }

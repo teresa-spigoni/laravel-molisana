@@ -79,6 +79,22 @@ header .menu {
   background: #b7dae5;
   text-align: center;
   padding: 40px 0 30px 0;
+  position: relative;
+}
+.products-main #pre, .products-main #next {
+  color: #002d73;
+  font-size: 30px;
+  cursor: pointer;
+}
+.products-main #pre {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+}
+.products-main #next {
+  position: absolute;
+  right: 50px;
+  top: 50%;
 }
 .products-main h2 {
   color: #002d73;
